@@ -26,7 +26,7 @@ describe('Testes BlueSoft', () => {
         productPage.validarCarrinho();
     })
 
-    it.only('Adicionar comentário', () =>{
+    it('Adicionar comentário', () =>{
         menuPage.acessarSite();
         productPage.selecionaProdutoMasc();
         productPage.adicionarComentario();
