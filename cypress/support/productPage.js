@@ -23,7 +23,9 @@ class productPage{
 
     adicionarComentario(){
         cy.get('#tab-label-reviews-title').click()
-        cy.get('#Rating_2_label').click()
+        
+        cy.get('#Rating_4_label').click({force:true})
+        
         cy.get('.review-field-nickname').type('Evans')
         cy.get('.review-field-summary').type('Review')
         cy.get('.review-field-text').type('Lorem Ipsum is simply dummy text of the printing and typesetting industry')
